@@ -1,0 +1,36 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- 导航栏颜色 -->
+        <item name="colorPrimary">@color/accent_material_light</item>
+        <!-- 状态栏颜色-->
+        <item name="colorPrimaryDark">@color/accent_material_light</item>
+        <!--<item name="colorPrimaryDark">@color/accent_material_dark</item>-->
+        <!-- 字体颜色 -->
+        <item name="android:textColorPrimary">@color/bright_foreground_material_dark</item>
+        <!-- 设置、返回按钮颜色 -->
+        <item name="colorControlNormal">@color/bright_foreground_material_dark</item>
+    </style>
+
+    <!-- Toolbar Menu主题 -->
+    <style name="ToolbarPopupTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- 设置Menu菜单的背景色 -->
+        <item name="android:itemBackground">@android:color/white</item>
+        <!-- 设置Menu菜单的字体颜色 -->
+        <item name="android:textColorPrimary">@android:color/black</item>
+        <!-- 设置Menu窗口不覆盖Toolbar视图 -->
+        <item name="overlapAnchor">false</item>
+    </style>
+
+    <style name="AppThemeDialogIsTranslucent" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- 去除Activity顶部黑线 -->
+        <!--<item name="android:windowContentOverlay">@null</item>-->
+        <!-- 系统状态栏背景设置透明 -->
+        <item name="android:windowDrawsSystemBarBackgrounds" tools:targetApi="lollipop">
+            @android:color/transparent
+        </item>
+        <!-- Activity背景 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+</resources>

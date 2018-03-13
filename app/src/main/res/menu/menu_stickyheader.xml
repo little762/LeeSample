@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/custom_anim"
+        android:orderInCategory="100"
+        android:title="自定义动画方式"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/decoration_anim"
+        android:orderInCategory="100"
+        android:title="ItemDecoration方式"
+        app:showAsAction="never"/>
+</menu>

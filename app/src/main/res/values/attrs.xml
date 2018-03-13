@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 带边框ImageView -->
+    <declare-styleable name="MyImageView">
+        <attr name="border_thickness" format="dimension"/>
+        <attr name="border_outside_color" format="color"/>
+    </declare-styleable>
+</resources>

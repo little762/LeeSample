@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="header_divider_height">2dp</dimen>
+    <dimen name="header_height">34dp</dimen>
+    <dimen name="header_textsize">22sp</dimen>
+</resources>

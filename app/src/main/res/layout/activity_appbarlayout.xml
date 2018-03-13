@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/coordinator_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            app:elevation="0dp">
+
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:id="@+id/main.collapsing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="?attr/actionBarSize"
+                app:collapsedTitleGravity="center_horizontal"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                <ImageView
+                    android:id="@+id/usercenter_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/dog"/>
+
+                <!-- 标题 -->
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="#00000000"
+                    app:layout_collapseMode="pin">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="AppBarLayout"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="18sp"/>
+                </android.support.v7.widget.Toolbar>
+            </android.support.design.widget.CollapsingToolbarLayout>
+
+            <!-- 指示器 -->
+            <TextView
+                android:id="@+id/usercenter_title_mic"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/color_material_light"
+                android:gravity="center"
+                android:text="我是悬浮的">
+            </TextView>
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/appbar_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        </android.support.v7.widget.RecyclerView>
+    </android.support.design.widget.CoordinatorLayout>
+
+</LinearLayout>
