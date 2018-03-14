@@ -212,10 +212,10 @@ public class RichTextEditor extends ScrollView
         //删除文件夹里的图片
         List<EditData> dataList = buildEditData();
         EditData editData = dataList.get(disappearingImageIndex);
-        if (editData.imagePath != null)
-        {
-            SDCardUtil.deleteFile(editData.imagePath);
-        }
+//        if (editData.imagePath != null)
+//        {
+//            SDCardUtil.deleteFile(editData.imagePath);
+//        }
         allLayout.removeView(view);
         viewTagIndex--;
         imgCount--;
@@ -365,26 +365,6 @@ public class RichTextEditor extends ScrollView
                 .error(R.mipmap.ic_img_default)
                 .into(imageView);
         imageView.setAbsolutePath(imagePath);//保留这句，后面保存数据会用
-//        Glide.with(getContext()).load(imagePath).crossFade().centerCrop().into(imageView);
-//        imageView.setScaleType(ImageView.ScaleType.CENTER_CROP);//裁剪剧中
-//        imageView.setScaleType(ImageView.ScaleType.FIT_XY);
-
-        // 调整imageView的高度，根据宽度来调整高度
-//        Bitmap bmp = BitmapFactory.decodeFile(imagePath);
-//        int imageHeight = 1000;
-//        if (bmp != null)
-//        {
-//            // 如果图片宽度大于屏幕，则将图片宽度设为屏幕进行等比计算高度
-//            if (bmp.getWidth() > allLayout.getWidth())
-//            {
-//                imageHeight = allLayout.getWidth() * bmp.getHeight() / bmp.getWidth();
-//                bmp.recycle();
-//            }
-//            RelativeLayout.LayoutParams lp = new RelativeLayout.LayoutParams(
-//                    LayoutParams.MATCH_PARENT, imageHeight);//设置图片固定高度
-//            lp.bottomMargin = 10;
-//            imageView.setLayoutParams(lp);
-//        }
         allLayout.addView(imageLayout, index);
     }
 
